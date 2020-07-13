@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Popify",
+    "version": "1.0",
+
+    "description": "Pops the current page out into a minimal popup page.",
+    "browser_action":{
+        "default_title":"Popify",
+        "default_popup": "popup/popup.html"
+    }
+}
