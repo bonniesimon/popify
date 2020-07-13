@@ -4,8 +4,7 @@ const runExt = () => {
     popBtn.addEventListener("click", () => {
         window.open("https:open.spotify.com", "spotify", "fullscreen=yes");
     });
-    const urlTab = getCurrentUrl();
-    console.log(urlTab);
+    getCurrentUrl();
 }
 
 //* Function to get Current tab object
@@ -13,15 +12,17 @@ const getCurrentTab = () => {
     return browser.tabs.query({currentWindow: true, active:true});
 }
 
+
 //* Function to get current tab url
 const getCurrentUrl = () => {
-    let urlTab;
     getCurrentTab().then((tabs) => {
-        // console.log(tabs[0].url)
-        urlTab = tabs[0].url;
+        console.log(tabs[0].url)
+        openUrl(tabs[0].url);
     })
-    console.log(urlTab);
-    return urlTab; 
+}
+
+const openUrl = (url) => {
+    window.open(url, "test", "fullscreen=yes");
 }
 
 runExt();
