@@ -9,6 +9,13 @@
         "default_popup": "popup/popup.html"
     },
     "permissions":[
-        "tabs"
-    ]
+        "tabs",
+        "webRequest"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "strict_min_version": "44.0"
+        }
+      }
+
 }

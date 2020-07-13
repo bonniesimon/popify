@@ -21,6 +21,7 @@ const getCurrentUrl = () => {
 }
 
 const openUrl = (url, title) => {
+    console.log(window.open(url, title, "fullscreen=yes"))
     window.open(url, title, "fullscreen=yes");
 }
 
