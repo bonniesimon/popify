@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    height: 10rem;
+    width: 8rem;
+    background-color: #153f6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-btn {
+    outline: none;
+    padding: 1.3rem;
+    border-radius: 10px;
+    color: #f7f7f7;
+    background: #153f6c;
+    box-shadow: 2px 2px 6px #12365c, -2px -2px 6px #18487c;
+}
+
+.pop-btn:hover{
+    background-color: #2267b3;
+}
