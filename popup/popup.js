@@ -1,28 +1,32 @@
 const popBtn = document.querySelector(".pop-btn");
 
-const runExt = () => {
-    popBtn.addEventListener("click", () => {
-        getCurrentUrl();
+const main= () => {
+    popBtn.addEventListener("click",() => {
+        var newWindow = window.open("", "Popup", "fullscreen=yes"); 
+        getCurrentUrl().then((tab) => {
+            newWindow.location.href = tab.url;
+            console.log(newWindow);
+        })
     });
+}
+
+
+const getTab = async (tab) => {
+    tab =   await getCurrentUrl();
+    return tab; 
 }
 
 //* Function to get Current tab object
 const getCurrentTab = () => {
-    return browser.tabs.query({currentWindow: true, active:true});
+    return browser.tabs.query({ currentWindow: true, active: true });
 }
-
 
 //* Function to get current tab url
 const getCurrentUrl = () => {
-    getCurrentTab().then((tabs) => {
-        console.log(tabs[0].url);
-        openUrl(tabs[0].url, tabs[0].title);
+    return getCurrentTab().then((tabs) => {
+        return tabs[0];
     })
 }
 
-const openUrl = (url, title) => {
-    console.log(window.open(url, title, "fullscreen=yes"))
-    window.open(url, title, "fullscreen=yes");
-}
 
-runExt();
+main();
