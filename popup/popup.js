@@ -2,9 +2,10 @@ const popBtn = document.querySelector(".pop-btn");
 
 const main= () => {
     popBtn.addEventListener("click",() => {
-        var newWindow = window.open("", "Popup", "fullscreen=yes"); 
+        var newWindow = window.open("", "popup", "fullscreen=yes"); 
         getCurrentUrl().then((tab) => {
             newWindow.location.href = tab.url;
+            newWindow.name = tab.title;
         })
     });
 }
