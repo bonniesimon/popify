@@ -2,7 +2,9 @@
     "manifest_version": 2,
     "name": "Popify",
     "version": "1.0",
-
+    "icons":{
+        "48":"icons/popify48.png"
+    },
     "description": "Pops the current page out into a minimal popup page.",
     "browser_action":{
         "default_title":"Popify",

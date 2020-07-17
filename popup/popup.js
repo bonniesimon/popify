@@ -5,7 +5,7 @@ const main= () => {
         var newWindow = window.open("", "popup", "fullscreen=yes"); 
         getCurrentUrl().then((tab) => {
             newWindow.location.href = tab.url;
-            newWindow.name = tab.title;
+            newWindow.document.title = tab.title;
         })
     });
 }
