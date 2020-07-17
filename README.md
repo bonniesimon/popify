@@ -13,7 +13,7 @@ Currently its not released on the add-ons page of mozilla, but will be soon.
 #### To get this extension:
 
 - Get the files
--  - Either Clone the repo or click the big green button **Code** and downlaod as zip (Remember to extract it into a folder)
+-  - Either Clone the repo or click the big green **Code** button and downlaod as zip (Remember to extract it into a folder)
 - Open Firefox, in the url bar type *about:debugging* and click on **This Firefox**
 - Click on **Load Temporary Add on**
 - Navigate to where you've downloaded the files and click on the *manifest.json* file.
