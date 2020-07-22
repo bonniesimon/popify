@@ -2,22 +2,22 @@
     "manifest_version": 2,
     "name": "Popify",
     "version": "1.0",
-    "icons":{
-        "48":"icons/popify48.png"
+    "icons": {
+        "48": "icons/popify48.png"
     },
     "description": "Pops the current page out into a minimal popup page.",
-    "browser_action":{
-        "default_title":"Popify",
+    "browser_action": {
+        "default_title": "Popify",
         "default_popup": "popup/popup.html"
     },
-    "permissions":[
+    "permissions": [
         "tabs",
         "webRequest"
     ],
     "browser_specific_settings": {
         "gecko": {
-          "strict_min_version": "44.0"
+            "id": "popify@addon.org",
+            "strict_min_version": "44.0"
         }
-      }
-
+    }
 }
