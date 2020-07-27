@@ -8,7 +8,7 @@ So my solution is to pop out the web app into a new minimal browser window. That
 
 ### Installing the Extension
 
-Currently its not released on the add-ons page of mozilla, but will be soon.
+Currently its not released on the add-ons page of mozilla, but will be soon. So to get the extension, you need to manually install it.
 
 #### Manually installing the extension
 - Go to the [releases](https://github.com/bonniesimon/popify/releases) section in this repo
