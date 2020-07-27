@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Popify",
-    "version": "1.0",
+    "version": "1.0.1",
     "icons": {
         "48": "icons/popify48.png"
     },

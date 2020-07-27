@@ -10,7 +10,13 @@ So my solution is to pop out the web app into a new minimal browser window. That
 
 Currently its not released on the add-ons page of mozilla, but will be soon.
 
-#### To get this extension:
+- Go to the (releases)[https://github.com/bonniesimon/popify/releases] section in this repo
+- Download the .xpi file.
+- Go to *about:addons* in firefox
+- Click on the gear icon and choose **Install Addon from file...**
+- Then select the .xpi file you've downloaded
+
+#### Temporarily adding the extension (Not Recommended) :
 
 - Get the files
 -  - Either Clone the repo or click the big green **Code** button and downlaod as zip (Remember to extract it into a folder)

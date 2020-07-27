@@ -6,10 +6,15 @@ const main= () => {
         getCurrentUrl().then((tab) => {
             newWindow.location.href = tab.url;
             newWindow.document.title = tab.title;
+            console.log(tab);
+            closeTab(tab.id);
         })
     });
 }
 
+const closeTab = (tabId) => {
+    return browser.tabs.remove(tabId);
+}
 
 const getTab = async (tab) => {
     tab =   await getCurrentUrl();
